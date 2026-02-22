@@ -1,0 +1,107 @@
+[
+  {
+    "id": "avlop",
+    "slug": "avlop-og-lekkasje",
+    "title": "Tett avløp og lekkasje",
+    "shortDescription": "Vi rydder tette avløp og reparerer vannlekkasjer raskt – før skaden sprer seg.",
+    "fullDescription": "Tette avløp og vannlekkasjer kan fort gi store materielle skader hvis de ikke utbedres umiddelbart. Vi har utstyret og kompetansen til å lokalisere og utbedre lekkasjer i rør, kraner, sluk og tilkoblinger. Vi bruker profesjonelt spyleutstyr og kamera til inspeksjon, og jobber effektivt slik at du kan bruke hjemmet ditt normalt igjen så fort som mulig.",
+    "icon": "drain",
+    "urgent": true,
+    "features": [
+      "Spyling av tette avløp",
+      "Reparasjon av vannlekkasjer",
+      "Utskifting av pakninger og ventiler",
+      "Kamerainspeksjon av rør"
+    ]
+  },
+  {
+    "id": "varmtvann",
+    "slug": "varmtvannsbereder",
+    "title": "Varmtvannsbereder",
+    "shortDescription": "Installasjon, service og utskifting av varmtvannsberedere – vi sørger for at du alltid har varmt vann.",
+    "fullDescription": "Enten varmtvannsberederen din er gammel, svikter eller du ønsker en mer energieffektiv løsning – vi hjelper deg. Vi monterer og bytter varmtvannsberedere fra ledende merker, tilpasset boligens behov. Vi gir deg råd om riktig kapasitet og driftsøkonomi, og sørger for at installasjonen utføres faglig korrekt.",
+    "icon": "water-heater",
+    "urgent": false,
+    "features": [
+      "Utskifting av varmtvannsbereder",
+      "Installasjon av ny bereder",
+      "Service og vedlikehold",
+      "Råd om energieffektive løsninger"
+    ]
+  },
+  {
+    "id": "baderom",
+    "slug": "baderomsinventar",
+    "title": "Baderomsinventar",
+    "shortDescription": "Montering av toalett, servant, dusj og badekar – vi tar oss av rørleggerarbeidet på badet.",
+    "fullDescription": "Enten du renoverer badet fra bunnen av eller bare skal bytte ut en gammel kran, har vi fagfolkene som gjør jobben riktig. Vi monterer alt rørleggerarbeid på badet: toalett, servant, dusj, badekar, blandebatterier og mer. Vi samarbeider gjerne med din flislegger og snekker for en smidig prosess.",
+    "icon": "bathroom",
+    "urgent": false,
+    "features": [
+      "Montering av toalett og servant",
+      "Installasjon av dusj og badekar",
+      "Utskifting av blandebatterier",
+      "Membran og vannbeskyttelse"
+    ]
+  },
+  {
+    "id": "rorinspekkjon",
+    "slug": "rorinspekkjon",
+    "title": "Rørinspeksjon",
+    "shortDescription": "Kamerainspeksjon av rør avdekker skjulte problemer i avløps- og vannrør – uten graving.",
+    "fullDescription": "Med moderne kamerautstyr kan vi inspisere innvendige rør uten å måtte åpne vegger eller grave. Dette gir et raskt og presist bilde av rørets tilstand, og er ideelt ved kjøp av bolig, ved gjentatte tetthetsproblemer, eller for å kartlegge behov for vedlikehold. Vi leverer rapport med bilder og anbefalinger.",
+    "icon": "camera",
+    "urgent": false,
+    "features": [
+      "Kamerainspeksjon av avløpsrør",
+      "Skriftlig rapport med bilder",
+      "Kartlegging av rørtilstand",
+      "Anbefaling av tiltak"
+    ]
+  },
+  {
+    "id": "varme",
+    "slug": "varmeanlegg",
+    "title": "Varmeanlegg",
+    "shortDescription": "Service, vedlikehold og reparasjon av gulvvarme, radiatorer og varmepumper.",
+    "fullDescription": "Vi utfører alt av arbeid på vannbårne varmesystemer – fra gulvvarme og radiatorer til varmepumper og fjernvarme. Vi hjelper deg med å optimalisere varmesystemet for lavere strømkostnad og bedre komfort. Vi reparerer feil, gjør periodisk vedlikehold og installerer nye løsninger.",
+    "icon": "heating",
+    "urgent": false,
+    "features": [
+      "Gulvvarme – installasjon og service",
+      "Radiatorer og ekspansjonskar",
+      "Varmepumpe – tilkobling og service",
+      "Balansering av varmeanlegg"
+    ]
+  },
+  {
+    "id": "kjokkken",
+    "slug": "kjokken",
+    "title": "Kjøkken og armatur",
+    "shortDescription": "Montering av kjøkkenarmatur, oppvaskmaskin, komfyr og vasker – enkelt og fagmessig utført.",
+    "fullDescription": "Vi kobler til og monterer alt av vann og avløp på kjøkkenet. Enten du bytter kjøkken, monterer ny oppvaskmaskin eller bare trenger en ny krankassett – vi fikser det. Vi sørger for tette og varige tilkoblinger etter gjeldende regler.",
+    "icon": "kitchen",
+    "urgent": false,
+    "features": [
+      "Montering av kjøkkenarmatur",
+      "Tilkobling av oppvaskmaskin",
+      "Utskifting av kran og ventiler",
+      "Montering av kjøkkenvask"
+    ]
+  },
+  {
+    "id": "serviceavtale",
+    "slug": "serviceavtale",
+    "title": "Serviceavtale",
+    "shortDescription": "Forebygg problemer med en fast serviceavtale – regelmessig tilsyn av rørleggerinstallasjoner.",
+    "fullDescription": "Med en serviceavtale hos RørleggerØstfold slipper du overraskende feil og kostbare utbedringer. Vi besøker deg jevnlig for å sjekke rørleggerinstallasjoner, varmtvannsberedere og avløpssystemer. Avtalekunder får også prioritet ved akuttoppdrag og rabatt på materialer og arbeid.",
+    "icon": "service",
+    "urgent": false,
+    "features": [
+      "Årlig gjennomgang av installasjoner",
+      "Prioritet ved akuttoppdrag",
+      "Rabatt på deler og arbeid",
+      "Skriftlig tilstandsrapport"
+    ]
+  }
+]

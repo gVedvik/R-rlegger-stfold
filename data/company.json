@@ -1,0 +1,22 @@
+{
+  "name": "RørleggerØstfold",
+  "tagline": "Din lokale rørlegger i Østfold",
+  "phone": "+4791234567",
+  "phoneDisplay": "912 34 567",
+  "email": "post@rorleggerostfold.no",
+  "address": "Østfold, Norge",
+  "orgnr": "123 456 789",
+  "openingHours": {
+    "weekdays": "07:00–17:00",
+    "saturday": "Etter avtale",
+    "sunday": "Stengt",
+    "emergency": "24/7 akuttvakt tilgjengelig"
+  },
+  "responseTime": "Normalt 1–2 timer",
+  "warrantyYears": 5,
+  "socialProof": {
+    "jobsCompleted": "1 200+",
+    "yearsExperience": "15+",
+    "satisfiedCustomers": "98%"
+  }
+}

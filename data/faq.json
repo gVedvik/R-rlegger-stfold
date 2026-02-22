@@ -1,0 +1,37 @@
+[
+  {
+    "id": "pris",
+    "question": "Hva koster det å leie en rørlegger?",
+    "answer": "Prisen avhenger av hvilken jobb som skal gjøres. Vi tilbyr fast pris der det er mulig, og timepris på mer uforutsigbare oppdrag. Ta kontakt for et uforpliktende tilbud – vi er åpne om prising og overrasker ikke med skjulte kostnader."
+  },
+  {
+    "id": "responstid",
+    "question": "Hvor raskt kan dere komme?",
+    "answer": "Ved akuttoppdrag – for eksempel vannlekkasje – tilstreber vi å være hos deg innen 1–2 timer i Østfold. For planlagte oppdrag avtaler vi en tid som passer for deg. Vi har god kapasitet og korte ventetider."
+  },
+  {
+    "id": "lekkasje",
+    "question": "Hva gjør jeg ved vannlekkasje?",
+    "answer": "Steng hovedvannet umiddelbart (se neste spørsmål). Skru av strømbryteren i rommet der lekkasjen er, hvis det er fare for vanninntrenging i elektriske installasjoner. Ring oss på 912 34 567 – vi er tilgjengelige på akuttlinje hele døgnet."
+  },
+  {
+    "id": "stengeventil",
+    "question": "Hvor finner jeg hovedkranen og hvordan stenger jeg vannet?",
+    "answer": "Hovedstengekranen sitter vanligvis i kjeller, bod eller under kjøkkenbenken. Det er en spak eller ratt som stenger hele vanntilførselen til boligen. Skru med klokken (ratt) eller legg spaken på tvers av røret for å stenge. Finn den gjerne nå – det kan spare deg for store skader."
+  },
+  {
+    "id": "forsikring",
+    "question": "Kan dere hjelpe med forsikringsdokumentasjon?",
+    "answer": "Ja. Etter utbedring av skader leverer vi alltid skriftlig dokumentasjon på arbeid utført, materialbruk og tilstand. Dette er nyttig i forbindelse med forsikringssaker. Ta kontakt med ditt forsikringsselskap og opplys om skaden – vi bistår gjerne med den tekniske dokumentasjonen."
+  },
+  {
+    "id": "sertifisering",
+    "question": "Er dere sertifiserte rørleggere?",
+    "answer": "Ja, alle våre fagfolk er sertifiserte rørleggere med fagbrev og nødvendige godkjenninger for arbeid på vannrør og avløp. Vi arbeider i henhold til gjeldende norske regler og standarder."
+  },
+  {
+    "id": "garanti",
+    "question": "Gir dere garanti på arbeidet?",
+    "answer": "Vi gir garanti på utført arbeid i samsvar med håndverker­tjenesteloven. Oppdager du feil eller mangler etter at vi har gjort en jobb, tar vi dette seriøst og utbedrer det uten ekstra kostnad innen garantiperioden. Ta kontakt med oss direkte."
+  }
+]

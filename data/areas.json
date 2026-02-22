@@ -1,0 +1,21 @@
+{
+  "primary": [
+    { "name": "Fredrikstad", "slug": "fredrikstad" },
+    { "name": "Sarpsborg", "slug": "sarpsborg" },
+    { "name": "Moss", "slug": "moss" },
+    { "name": "Halden", "slug": "halden" },
+    { "name": "Askim", "slug": "askim" }
+  ],
+  "secondary": [
+    { "name": "Mysen", "slug": "mysen" },
+    { "name": "Rakkestad", "slug": "rakkestad" },
+    { "name": "Eidsberg", "slug": "eidsberg" },
+    { "name": "Skiptvet", "slug": "skiptvet" },
+    { "name": "Spydeberg", "slug": "spydeberg" },
+    { "name": "Marker", "slug": "marker" },
+    { "name": "Hvaler", "slug": "hvaler" },
+    { "name": "Råde", "slug": "rade" },
+    { "name": "Rygge", "slug": "rygge" },
+    { "name": "Indre Østfold", "slug": "indre-ostfold" }
+  ]
+}
