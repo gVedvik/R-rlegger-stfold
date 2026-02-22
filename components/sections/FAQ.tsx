@@ -25,10 +25,10 @@ export default function FAQ() {
           <p className="mt-4 max-w-lg mx-auto text-lg text-slate-600 dark:text-slate-300">
             Finner du ikke svaret du leter etter? Ring oss på{" "}
             <a
-              href="tel:+4791234567"
+              href="tel:+4747600444"
               className="font-semibold text-brand-700 dark:text-brand-300 hover:underline"
             >
-              912 34 567
+              476 00 444
             </a>
             .
           </p>

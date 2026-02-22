@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Akutt rørlegger i Østfold – Ring 24/7",
   description:
-    "Trenger du en akutt rørlegger i Østfold? Vi er tilgjengelige hele døgnet for vannlekkasjer, tette avløp og andre akuttoppdrag. Ring 912 34 567 nå.",
+    "Trenger du en akutt rørlegger i Østfold? Vi er tilgjengelige hele døgnet for vannlekkasjer, tette avløp og andre akuttoppdrag. Ring 476 00 444 nå.",
   path: "/akutt",
 });
 

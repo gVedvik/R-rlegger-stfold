@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Kontakt – RørleggerØstfold",
   description:
-    "Ta kontakt med RørleggerØstfold. Ring 912 34 567, send e-post eller fyll ut kontaktskjemaet. Vi er tilgjengelige hverdager 07–17 og på akuttlinje 24/7.",
+    "Ta kontakt med RørleggerØstfold. Ring 476 00 444, send e-post eller fyll ut kontaktskjemaet. Vi er tilgjengelige hverdager 07–17 og på akuttlinje 24/7.",
   path: "/kontakt",
 });
 

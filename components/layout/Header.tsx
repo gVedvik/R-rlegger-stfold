@@ -60,12 +60,12 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-2">
             <ThemeToggle />
             <a
-              href="tel:+4791234567"
+              href="tel:+4747600444"
               className="flex items-center gap-2 rounded-full bg-brand-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-700 transition-colors pulse-ring"
-              aria-label="Ring oss nå: 912 34 567"
+              aria-label="Ring oss nå: 476 00 444"
             >
               <PhoneIcon />
-              Ring nå: 912 34 567
+              Ring nå: 476 00 444
             </a>
           </div>
 

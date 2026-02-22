@@ -131,12 +131,12 @@ export default function MobileMenu() {
               ))}
               <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
                 <a
-                  href="tel:+4791234567"
+                  href="tel:+4747600444"
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-center gap-2 w-full rounded-full bg-brand-600 px-6 py-3 text-lg font-bold text-white hover:bg-brand-700 transition-colors"
                 >
                   <PhoneIcon />
-                  Ring nå: 912 34 567
+                  Ring nå: 476 00 444
                 </a>
               </div>
             </nav>

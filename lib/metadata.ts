@@ -43,6 +43,6 @@ export function buildMetadata({
 export const defaultMeta = buildMetadata({
   title: "Rask og pålitelig rørlegger i Østfold",
   description:
-    "RørleggerØstfold – sertifiserte rørleggere med rask respons i Fredrikstad, Sarpsborg, Moss, Halden og hele Østfold. Fast pris der det er mulig. Ring 912 34 567.",
+    "RørleggerØstfold – sertifiserte rørleggere med rask respons i Fredrikstad, Sarpsborg, Moss, Halden og hele Østfold. Fast pris der det er mulig. Ring 476 00 444.",
   path: "/",
 });

@@ -251,7 +251,7 @@ export default function ContactForm() {
                   aria-describedby={errors.phone ? `${id("phone")}-err` : undefined}
                   value={form.phone}
                   onChange={handleChange}
-                  placeholder="912 34 567"
+                  placeholder="476 00 444"
                   className={inputClass(!!errors.phone)}
                 />
               </Field>
