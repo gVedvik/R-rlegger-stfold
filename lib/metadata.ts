@@ -16,7 +16,7 @@ export function buildMetadata({
   noIndex = false,
 }: PageMeta): Metadata {
   const url = `${siteUrl}${path}`;
-  const fullTitle = `${title} | RørleggerØstfold`;
+  const fullTitle = `${title} | Rørlegger Østfold AS`;
 
   return {
     title: fullTitle,
@@ -28,7 +28,7 @@ export function buildMetadata({
       title: fullTitle,
       description,
       url,
-      siteName: "RørleggerØstfold",
+      siteName: "Rørlegger Østfold AS",
       locale: "nb_NO",
       type: "website",
     },
@@ -43,6 +43,6 @@ export function buildMetadata({
 export const defaultMeta = buildMetadata({
   title: "Rask og pålitelig rørlegger i Østfold",
   description:
-    "RørleggerØstfold – sertifiserte rørleggere med rask respons i Fredrikstad, Sarpsborg, Moss, Halden og hele Østfold. Fast pris der det er mulig. Ring 476 00 444.",
+    "Rørlegger Østfold AS – sertifiserte rørleggere med rask respons i Fredrikstad, Sarpsborg, Moss, Halden og hele Østfold. Fast pris der det er mulig. Ring 476 00 444.",
   path: "/",
 });

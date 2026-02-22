@@ -337,7 +337,7 @@ export default function ContactForm() {
                     htmlFor={id("consent")}
                     className="text-sm text-slate-700 dark:text-slate-300"
                   >
-                    Jeg godtar at RørleggerØstfold lagrer og behandler mine
+                    Jeg godtar at Rørlegger Østfold AS lagrer og behandler mine
                     opplysninger for å besvare denne henvendelsen. Les vår{" "}
                     <a
                       href="/personvern"

@@ -4,9 +4,9 @@ import { buildMetadata } from "@/lib/metadata";
 import company from "@/data/company.json";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Personvernerklæring – RørleggerØstfold",
+  title: "Personvernerklæring – Rørlegger Østfold AS",
   description:
-    "Les personvernerklæringen til RørleggerØstfold. Vi behandler dine personopplysninger i samsvar med GDPR og norsk personvernlovgivning.",
+    "Les personvernerklæringen til Rørlegger Østfold AS. Vi behandler dine personopplysninger i samsvar med GDPR og norsk personvernlovgivning.",
   path: "/personvern",
   noIndex: true,
 });

@@ -5,9 +5,9 @@ import company from "@/data/company.json";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Kontakt – RørleggerØstfold",
+  title: "Kontakt – Rørlegger Østfold AS",
   description:
-    "Ta kontakt med RørleggerØstfold. Ring 476 00 444, send e-post eller fyll ut kontaktskjemaet. Vi er tilgjengelige hverdager 07–17 og på akuttlinje 24/7.",
+    "Ta kontakt med Rørlegger Østfold AS. Ring 476 00 444, send e-post eller fyll ut kontaktskjemaet. Vi er tilgjengelige hverdager 07–17 og på akuttlinje 24/7.",
   path: "/kontakt",
 });
 
