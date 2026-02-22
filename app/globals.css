@@ -43,49 +43,49 @@
    KEYFRAME ANIMATIONS
    ============================================================ */
 
-@keyframes floatPoly1 {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-  33% {
-    transform: translate(28px, -22px) scale(1.03);
-  }
-  66% {
-    transform: translate(-16px, 14px) scale(0.97);
-  }
-}
-
-@keyframes floatPoly2 {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-  40% {
-    transform: translate(-32px, 18px) scale(1.04);
-  }
-  70% {
-    transform: translate(22px, -12px) scale(0.96);
-  }
-}
-
-@keyframes floatPoly3 {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(18px, -28px);
-  }
-}
-
-@keyframes waveShift {
+@keyframes gridDrift {
   0%,
   100% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-24px);
+    transform: translateX(90px);
+  }
+}
+
+@keyframes orbDriftA {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-110px);
+    opacity: 0.65;
+  }
+}
+
+@keyframes orbDriftB {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(95px);
+    opacity: 0.70;
+  }
+}
+
+@keyframes orbDriftC {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  45% {
+    transform: translateY(-80px);
+    opacity: 0.68;
   }
 }
 
@@ -201,21 +201,22 @@
    ============================================================ */
 
 @layer utilities {
-  /* Water polygon float animations */
-  .poly-float-1 {
-    animation: floatPoly1 16s ease-in-out infinite;
+  /* Hero background – perspective grid drift */
+  .grid-drift {
+    animation: gridDrift 28s ease-in-out infinite;
   }
-  .poly-float-2 {
-    animation: floatPoly2 20s ease-in-out infinite;
+
+  /* Hero background – floating light orbs */
+  .orb-drift-a {
+    animation: orbDriftA 12s ease-in-out infinite;
   }
-  .poly-float-3 {
-    animation: floatPoly3 24s ease-in-out infinite;
+  .orb-drift-b {
+    animation: orbDriftB 16s ease-in-out infinite;
+    animation-delay: -4s;
   }
-  .wave-drift-1 {
-    animation: waveShift 12s ease-in-out infinite;
-  }
-  .wave-drift-2 {
-    animation: waveShift 16s ease-in-out infinite reverse;
+  .orb-drift-c {
+    animation: orbDriftC 10s ease-in-out infinite;
+    animation-delay: -3s;
   }
 
   /* Page entry animations */

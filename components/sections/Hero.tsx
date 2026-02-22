@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href={`tel:${company.phone}`}
-            className="flex items-center gap-2.5 rounded-full bg-emergency-600 px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-emergency-700 transition-colors pulse-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-800"
+            className="flex items-center gap-2.5 rounded-full bg-brand-600 px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-brand-700 transition-colors pulse-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-800"
             aria-label={`Ring oss nå: ${company.phoneDisplay}`}
           >
             <PhoneIcon />

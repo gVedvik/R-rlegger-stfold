@@ -24,7 +24,7 @@ const variantClasses: Record<Variant, string> = {
   secondary:
     "bg-white text-brand-700 border border-brand-200 hover:bg-brand-50 hover:border-brand-300 focus-visible:ring-brand-400",
   emergency:
-    "bg-emergency-600 text-white hover:bg-emergency-700 focus-visible:ring-emergency-500",
+    "bg-brand-600 text-white hover:bg-brand-700 focus-visible:ring-brand-400",
   ghost:
     "text-brand-700 hover:bg-brand-50 focus-visible:ring-brand-400",
 };

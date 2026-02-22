@@ -71,7 +71,7 @@ export default function ServiceAreas() {
             <div className="mt-8">
               <a
                 href={`tel:${company.phone}`}
-                className="inline-flex items-center gap-2 rounded-full bg-emergency-600 px-6 py-3 text-sm font-bold text-white hover:bg-emergency-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-900"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-900"
                 aria-label={`Ring oss: ${company.phoneDisplay}`}
               >
                 <PhoneIcon />

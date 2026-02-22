@@ -1,9 +1,26 @@
 /**
- * WaterBackground – lightweight SVG polygon mesh with CSS animations.
- * Animations are disabled when prefers-reduced-motion is active (via CSS).
- * Rendered as a Server Component (pure SVG markup, no JS runtime).
+ * HeroBackground – sophisticated SaaS-style hero background.
+ * Layers: dark teal radial base → blurred gradient orbs → perspective grid.
+ * All animation is CSS-only. Respects prefers-reduced-motion (via globals.css).
+ * Rendered as a Server Component – zero JS runtime cost.
  */
 export default function WaterBackground() {
+  const vp = { x: 720, y: 80 } as const; // vanishing point
+  const H = 680; // y-range from vp to bottom edge (760 - 80)
+
+  // Vertical perspective lines: each runs from a bottom-x to the vanishing point
+  const vLineXs = [
+    -400, -240, -80, 80, 240, 400, 560, 720,
+    880, 1040, 1200, 1360, 1520, 1680, 1840,
+  ];
+
+  // Horizontal lines: t ∈ (0, 1] where 1 = bottom edge, 0 = vanishing point.
+  // Values clustered logarithmically so lines crowd near the horizon.
+  const hLineTs = [
+    1.0, 0.85, 0.71, 0.59, 0.49, 0.40,
+    0.32, 0.26, 0.21, 0.17, 0.13, 0.10, 0.07,
+  ];
+
   return (
     <div
       aria-hidden="true"
@@ -16,87 +33,77 @@ export default function WaterBackground() {
         className="absolute inset-0 h-full w-full"
       >
         <defs>
-          <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0c4a6e" stopOpacity="1" />
-            <stop offset="60%" stopColor="#0369a1" stopOpacity="1" />
-            <stop offset="100%" stopColor="#0f766e" stopOpacity="1" />
+          {/* ── Deep charcoal-to-teal radial gradient ── */}
+          <radialGradient id="hero-bg" cx="50%" cy="50%" r="75%">
+            <stop offset="0%" stopColor="#042424" />
+            <stop offset="100%" stopColor="#0D1717" />
+          </radialGradient>
+
+          {/* ── Heavy blur for out-of-focus light orbs ── */}
+          <filter id="orb-blur" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur stdDeviation="75" />
+          </filter>
+
+          {/* ── Grid fade: transparent near VP, fully opaque at bottom ── */}
+          <linearGradient id="grid-v-fade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"   stopColor="white" stopOpacity="0" />
+            <stop offset="22%"  stopColor="white" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="white" stopOpacity="1" />
           </linearGradient>
+          <mask id="grid-mask">
+            <rect width="1440" height="760" fill="url(#grid-v-fade)" />
+          </mask>
         </defs>
 
-        {/* Base gradient fill */}
-        <rect width="1440" height="760" fill="url(#bg-grad)" />
+        {/* ── 1. Base layer ──────────────────────────────────── */}
+        <rect width="1440" height="760" fill="url(#hero-bg)" />
 
-        {/* Floating polygon mesh – layer 1 (light) */}
-        <polygon
-          points="0,0 480,0 280,320"
-          fill="rgba(255,255,255,0.04)"
-          className="poly-float-1"
-          style={{ transformOrigin: "240px 106px" }}
-        />
-        <polygon
-          points="1440,0 960,0 1160,300"
-          fill="rgba(255,255,255,0.04)"
-          className="poly-float-2"
-          style={{ transformOrigin: "1187px 100px" }}
-        />
-        <polygon
-          points="600,0 900,0 780,250"
-          fill="rgba(255,255,255,0.05)"
-          className="poly-float-3"
-          style={{ transformOrigin: "760px 83px" }}
-        />
+        {/* ── 2. Orb layer (blurred, behind grid) ───────────── */}
+        <g filter="url(#orb-blur)">
+          {/* Soft Teal – primary brand accent */}
+          <g className="orb-drift-a">
+            <circle cx="220" cy="280" r="340" fill="#64ffda" fillOpacity="0.13" />
+          </g>
+          {/* Muted Lavender – cool futuristic contrast */}
+          <g className="orb-drift-b">
+            <circle cx="1160" cy="190" r="290" fill="#9D8CFF" fillOpacity="0.11" />
+          </g>
+          {/* Warm Sand – organic warmth to balance cool tones */}
+          <g className="orb-drift-c">
+            <circle cx="760" cy="570" r="250" fill="#E5D3B0" fillOpacity="0.09" />
+          </g>
+        </g>
 
-        {/* Floating polygon mesh – layer 2 (accent teal) */}
-        <polygon
-          points="0,400 300,200 500,500"
-          fill="rgba(13,148,136,0.12)"
-          className="poly-float-2"
-          style={{ transformOrigin: "267px 367px" }}
-        />
-        <polygon
-          points="1440,300 1100,500 1300,760"
-          fill="rgba(13,148,136,0.10)"
-          className="poly-float-1"
-          style={{ transformOrigin: "1280px 520px" }}
-        />
-        <polygon
-          points="400,600 700,400 900,700"
-          fill="rgba(14,165,233,0.08)"
-          className="poly-float-3"
-          style={{ transformOrigin: "667px 567px" }}
-        />
+        {/* ── 3. Perspective grid ───────────────────────────── */}
+        {/* Outer <g> holds the mask; inner <g> drifts horizontally */}
+        <g mask="url(#grid-mask)">
+          <g
+            className="grid-drift"
+            stroke="rgba(100,255,218,0.14)"
+            strokeWidth="0.6"
+            fill="none"
+          >
+            {/* Vertical lines – all converge at the vanishing point */}
+            {vLineXs.map((x) => (
+              <line key={`v${x}`} x1={x} y1={760} x2={vp.x} y2={vp.y} />
+            ))}
 
-        {/* Mid-layer large polygon */}
-        <polygon
-          points="200,760 0,500 600,760"
-          fill="rgba(255,255,255,0.03)"
-          className="poly-float-1"
-          style={{ transformOrigin: "267px 673px" }}
-        />
-        <polygon
-          points="1440,760 900,600 1440,400"
-          fill="rgba(255,255,255,0.03)"
-          className="poly-float-2"
-          style={{ transformOrigin: "1260px 587px" }}
-        />
-
-        {/* Wave paths at the bottom of the hero */}
-        <path
-          d="M0,620 C240,590 480,650 720,615 C960,580 1200,640 1440,620 L1440,760 L0,760 Z"
-          fill="rgba(255,255,255,0.04)"
-          className="wave-drift-1"
-        />
-        <path
-          d="M0,670 C200,645 450,695 720,665 C990,635 1240,685 1440,665 L1440,760 L0,760 Z"
-          fill="rgba(255,255,255,0.05)"
-          className="wave-drift-2"
-        />
-        <path
-          d="M0,710 C280,690 580,725 860,705 C1140,685 1300,715 1440,710 L1440,760 L0,760 Z"
-          fill="rgba(255,255,255,0.06)"
-          className="wave-drift-1"
-          style={{ animationDelay: "-4s" }}
-        />
+            {/* Horizontal lines – perspective-spaced, width proportional to t */}
+            {hLineTs.map((t) => {
+              const y    = vp.y + H * t;
+              const xOff = 720 * t;
+              return (
+                <line
+                  key={`h${t}`}
+                  x1={vp.x - xOff}
+                  y1={y}
+                  x2={vp.x + xOff}
+                  y2={y}
+                />
+              );
+            })}
+          </g>
+        </g>
       </svg>
     </div>
   );

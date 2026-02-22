@@ -199,7 +199,7 @@ export default function OmOssPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href={`tel:${company.phone}`}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-emergency-600 px-8 py-3.5 text-base font-bold text-white hover:bg-emergency-700 transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-8 py-3.5 text-base font-bold text-white hover:bg-brand-700 transition-colors"
             >
               Ring {company.phoneDisplay}
             </a>

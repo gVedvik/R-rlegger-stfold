@@ -61,7 +61,7 @@ export default function Header() {
             <ThemeToggle />
             <a
               href="tel:+4791234567"
-              className="flex items-center gap-2 rounded-full bg-emergency-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-emergency-700 transition-colors pulse-ring"
+              className="flex items-center gap-2 rounded-full bg-brand-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-700 transition-colors pulse-ring"
               aria-label="Ring oss nå: 912 34 567"
             >
               <PhoneIcon />

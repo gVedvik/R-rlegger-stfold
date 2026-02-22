@@ -133,7 +133,7 @@ export default function MobileMenu() {
                 <a
                   href="tel:+4791234567"
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-center gap-2 w-full rounded-full bg-emergency-600 px-6 py-3 text-lg font-bold text-white hover:bg-emergency-700 transition-colors"
+                  className="flex items-center justify-center gap-2 w-full rounded-full bg-brand-600 px-6 py-3 text-lg font-bold text-white hover:bg-brand-700 transition-colors"
                 >
                   <PhoneIcon />
                   Ring nå: 912 34 567

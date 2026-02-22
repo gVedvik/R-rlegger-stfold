@@ -65,7 +65,7 @@ export default function Footer() {
             </p>
             <a
               href={`tel:${company.phone}`}
-              className="inline-flex items-center gap-2 rounded-full bg-emergency-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-emergency-700 transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-700 transition-colors"
               aria-label={`Ring oss: ${company.phoneDisplay}`}
             >
               <PhoneIcon />

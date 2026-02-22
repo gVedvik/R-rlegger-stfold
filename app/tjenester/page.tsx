@@ -138,7 +138,7 @@ export default function TjenesterPage() {
                   <div className="mt-6">
                     <a
                       href={`tel:${company.phone}`}
-                      className="inline-flex items-center gap-2 rounded-full bg-emergency-600 px-6 py-3 text-sm font-bold text-white hover:bg-emergency-700 transition-colors"
+                      className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700 transition-colors"
                     >
                       Ring oss: {company.phoneDisplay}
                     </a>
