@@ -5,13 +5,13 @@ export default function Hero() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden text-center"
+      className="relative -mt-16 flex min-h-[calc(90vh+4rem)] flex-col items-center justify-center overflow-hidden text-center"
     >
       {/* Animated water background */}
       <WaterBackground />
 
       {/* Content */}
-      <div className="relative z-10 container-xl py-24">
+      <div className="relative z-10 container-xl pt-[calc(6rem+4rem)] pb-24">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 rounded-full bg-brand-900/10 border border-brand-900/20 dark:bg-white/10 dark:border-white/20 px-4 py-1.5 text-sm font-medium text-brand-900 dark:text-white/90 mb-8 backdrop-blur-sm">
           <span className="h-2 w-2 rounded-full bg-green-600 dark:bg-green-400 animate-pulse" aria-hidden="true" />
