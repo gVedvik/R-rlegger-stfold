@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 
 const navLinks = [
@@ -13,15 +14,25 @@ const navLinks = [
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
+  const overlayRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  // Close on outside click
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Close on outside click (click outside both the button and the overlay)
   useEffect(() => {
     function handle(e: MouseEvent) {
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-        setOpen(false);
+      const target = e.target as Node;
+      if (
+        buttonRef.current?.contains(target) ||
+        overlayRef.current?.contains(target)
+      ) {
+        return;
       }
+      setOpen(false);
     }
     document.addEventListener("mousedown", handle);
     return () => document.removeEventListener("mousedown", handle);
@@ -48,7 +59,7 @@ export default function MobileMenu() {
   }, [open]);
 
   return (
-    <div ref={menuRef} className="lg:hidden">
+    <div className="lg:hidden">
       <button
         ref={buttonRef}
         aria-label={open ? "Lukk meny" : "Åpne meny"}
@@ -89,8 +100,9 @@ export default function MobileMenu() {
         )}
       </button>
 
-      {open && (
+      {open && mounted && createPortal(
         <div
+          ref={overlayRef}
           id="mobile-nav"
           role="dialog"
           aria-label="Navigasjonsmeny"
@@ -141,7 +153,8 @@ export default function MobileMenu() {
               </div>
             </nav>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
