@@ -122,6 +122,24 @@
 }
 
 /* ============================================================
+   VIEW TRANSITIONS – circle-spread theme toggle
+   ============================================================ */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* New layer expands over old via JS-driven clip-path animation */
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 2;
+}
+
+/* ============================================================
    BASE STYLES
    ============================================================ */
 

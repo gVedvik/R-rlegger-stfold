@@ -58,12 +58,53 @@ export default function ThemeToggle() {
     applyTheme(theme);
   }, [theme]);
 
-  function toggle() {
+  function toggle(e: React.MouseEvent<HTMLButtonElement>) {
     const next: Theme = theme === "dark" ? "light" : "dark";
-    localStorage.setItem(THEME_KEY, next);
-    window.dispatchEvent(
-      new CustomEvent(THEME_EVENT, { detail: { theme: next } }),
+    const apply = () => {
+      localStorage.setItem(THEME_KEY, next);
+      window.dispatchEvent(
+        new CustomEvent(THEME_EVENT, { detail: { theme: next } }),
+      );
+    };
+
+    const doc = document as Document & {
+      startViewTransition?: (cb: () => void) => {
+        ready: Promise<void>;
+      };
+    };
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (!doc.startViewTransition || reduced) {
+      apply();
+      return;
+    }
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    const endRadius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y),
     );
+
+    const transition = doc.startViewTransition(apply);
+    transition.ready.then(() => {
+      document.documentElement.animate(
+        {
+          clipPath: [
+            `circle(0px at ${x}px ${y}px)`,
+            `circle(${endRadius}px at ${x}px ${y}px)`,
+          ],
+        },
+        {
+          duration: 500,
+          easing: "ease-in-out",
+          pseudoElement: "::view-transition-new(root)",
+        },
+      );
+    });
   }
 
   const ariaLabel =
@@ -75,7 +116,7 @@ export default function ThemeToggle() {
   return (
     <button
       type="button"
-      onClick={toggle}
+      onClick={(e) => toggle(e)}
       aria-label={ariaLabel}
       title={title}
       suppressHydrationWarning
