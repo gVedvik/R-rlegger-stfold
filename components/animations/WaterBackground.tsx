@@ -38,9 +38,9 @@ export default function WaterBackground() {
           <g className="orb-drift-a">
             <circle cx="220" cy="280" r="340" fill="#64ffda" fillOpacity="0.13" />
           </g>
-          {/* Muted Lavender – cool futuristic contrast */}
+          {/* White – matches site background for subtle contrast */}
           <g className="orb-drift-b">
-            <circle cx="1160" cy="190" r="290" fill="#9D8CFF" fillOpacity="0.11" />
+            <circle cx="1160" cy="190" r="290" fill="#ffffff" fillOpacity="0.11" />
           </g>
           {/* Warm Sand – organic warmth to balance cool tones */}
           <g className="orb-drift-c">
