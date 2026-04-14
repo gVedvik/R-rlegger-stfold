@@ -17,10 +17,10 @@ export default function WaterBackground() {
         className="absolute inset-0 h-full w-full"
       >
         <defs>
-          {/* ── Deep charcoal-to-teal radial gradient ── */}
+          {/* ── Radial base gradient (colors set via CSS) ── */}
           <radialGradient id="hero-bg" cx="50%" cy="50%" r="75%">
-            <stop offset="0%" stopColor="#042424" />
-            <stop offset="100%" stopColor="#0D1717" />
+            <stop offset="0%" className="hero-bg-start" />
+            <stop offset="100%" className="hero-bg-end" />
           </radialGradient>
 
           {/* ── Heavy blur for out-of-focus light orbs ── */}
@@ -32,19 +32,16 @@ export default function WaterBackground() {
         {/* ── 1. Base layer ──────────────────────────────────── */}
         <rect width="1440" height="760" fill="url(#hero-bg)" />
 
-        {/* ── 2. Orb layer (blurred) ────────────────────────── */}
+        {/* ── 2. Orb layer (blurred; colors set via CSS) ────── */}
         <g filter="url(#orb-blur)">
-          {/* Soft Teal – primary brand accent */}
           <g className="orb-drift-a">
-            <circle cx="220" cy="280" r="340" fill="#64ffda" fillOpacity="0.13" />
+            <circle cx="220" cy="280" r="340" className="hero-orb-a" />
           </g>
-          {/* White – matches site background for subtle contrast */}
           <g className="orb-drift-b">
-            <circle cx="1160" cy="190" r="290" fill="#ffffff" fillOpacity="0.11" />
+            <circle cx="1160" cy="190" r="290" className="hero-orb-b" />
           </g>
-          {/* Warm Sand – organic warmth to balance cool tones */}
           <g className="orb-drift-c">
-            <circle cx="760" cy="570" r="250" fill="#E5D3B0" fillOpacity="0.09" />
+            <circle cx="760" cy="570" r="250" className="hero-orb-c" />
           </g>
         </g>
       </svg>

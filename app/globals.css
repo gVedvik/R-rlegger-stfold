@@ -201,6 +201,20 @@
    ============================================================ */
 
 @layer utilities {
+  /* Hero background – SVG gradient stops (light mode default) */
+  .hero-bg-start { stop-color: #f0fdfa; }
+  .hero-bg-end   { stop-color: #ccfbf1; }
+  .dark .hero-bg-start { stop-color: #042424; }
+  .dark .hero-bg-end   { stop-color: #0d1717; }
+
+  /* Hero background – orb fills (light mode default) */
+  .hero-orb-a { fill: #2dd4bf; fill-opacity: 0.35; }
+  .hero-orb-b { fill: #ffffff; fill-opacity: 0.70; }
+  .hero-orb-c { fill: #fde68a; fill-opacity: 0.35; }
+  .dark .hero-orb-a { fill: #64ffda; fill-opacity: 0.13; }
+  .dark .hero-orb-b { fill: #ffffff; fill-opacity: 0.11; }
+  .dark .hero-orb-c { fill: #e5d3b0; fill-opacity: 0.09; }
+
   /* Hero background – perspective grid drift */
   .grid-drift {
     animation: gridDrift 28s ease-in-out infinite;
