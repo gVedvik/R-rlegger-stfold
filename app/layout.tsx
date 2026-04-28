@@ -31,7 +31,7 @@ export default function RootLayout({
           sizes="180x180"
           href="/favicon/apple-touch-icon.png"
         />
-        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <meta name="apple-mobile-web-app-title" content="Rørlegger Østfold" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         {/*
           Anti-flash script: reads saved theme from localStorage and applies
