@@ -102,12 +102,12 @@ export default function ContactForm() {
           <div
             role="status"
             aria-live="polite"
-            className="rounded-2xl border border-green-200 bg-green-50 px-8 py-12 text-center"
+            className="rounded-2xl border border-green-200 bg-green-50 dark:border-green-800 dark:bg-green-950 px-8 py-12 text-center transition-colors"
           >
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 dark:bg-green-900">
               <svg
                 aria-hidden="true"
-                className="h-8 w-8 text-green-600"
+                className="h-8 w-8 text-green-600 dark:text-green-400"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -124,7 +124,7 @@ export default function ContactForm() {
               Vi tar kontakt med deg innen kort tid. Haster det?{" "}
               <a
                 href={`tel:${company.phone}`}
-                className="font-semibold text-brand-700 hover:underline"
+                className="font-semibold text-brand-700 dark:text-brand-300 hover:underline"
               >
                 Ring oss direkte på {company.phoneDisplay}
               </a>
