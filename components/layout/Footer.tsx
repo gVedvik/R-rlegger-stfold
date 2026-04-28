@@ -56,7 +56,7 @@ export default function Footer() {
               aria-label="Østfold Rørleggerbedrift AS – til startsiden"
             >
               <span className="text-xl font-bold text-white">
-                Rørlegger Østfold<span className="text-brand-400"> AS</span>
+                Østfold <span className="text-brand-400">Rørleggerbedrift</span> AS
               </span>
             </Link>
             <p className="text-sm leading-relaxed mb-5 text-slate-600 dark:text-slate-400">
