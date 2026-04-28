@@ -13,7 +13,7 @@ export default function FAQ() {
     >
       <div className="container-xl">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold uppercase tracking-widest text-brand-600">
+          <span className="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">
             Vanlige spørsmål
           </span>
           <h2

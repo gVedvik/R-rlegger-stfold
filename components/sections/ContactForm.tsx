@@ -146,7 +146,7 @@ export default function ContactForm() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           {/* Left: Info */}
           <div>
-            <span className="text-sm font-semibold uppercase tracking-widest text-brand-600">
+            <span className="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">
               Kontakt oss
             </span>
             <h2
@@ -164,7 +164,7 @@ export default function ContactForm() {
               <InfoRow icon="phone" label="Telefon">
                 <a
                   href={`tel:${company.phone}`}
-                  className="text-brand-700 font-semibold hover:underline"
+                  className="text-brand-700 dark:text-brand-300 font-semibold hover:underline"
                 >
                   {company.phoneDisplay}
                 </a>
@@ -172,7 +172,7 @@ export default function ContactForm() {
               <InfoRow icon="mail" label="E-post">
                 <a
                   href={`mailto:${company.email}`}
-                  className="text-brand-700 font-semibold hover:underline"
+                  className="text-brand-700 dark:text-brand-300 font-semibold hover:underline"
                 >
                   {company.email}
                 </a>
@@ -341,7 +341,7 @@ export default function ContactForm() {
                     opplysninger for å besvare denne henvendelsen. Les vår{" "}
                     <a
                       href="/personvern"
-                      className="text-brand-700 font-medium hover:underline"
+                      className="text-brand-700 dark:text-brand-300 font-medium hover:underline"
                     >
                       personvernerklæring
                     </a>
