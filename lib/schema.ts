@@ -1,6 +1,6 @@
 import company from "@/data/company.json";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rorleggerostfold.no";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rørleggerøstfold.no";
 
 export function localBusinessSchema() {
   return {
