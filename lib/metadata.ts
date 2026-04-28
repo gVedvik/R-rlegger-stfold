@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rorleggerostfold.no";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rørleggerøstfold.no";
 
 interface PageMeta {
   title: string;
