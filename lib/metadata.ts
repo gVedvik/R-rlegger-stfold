@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rørleggerøstfold.no";
+// Display URL (Unicode IDN) — used as raw strings so it survives in og:url
+// and og:image as 'rørleggerøstfold.no' instead of being normalized by
+// `new URL()` (which always converts IDN to Punycode/xn--).
+const SITE_URL = "https://rørleggerøstfold.no";
+// metadataBase MUST be a URL object (Next.js requires it), so it ends up
+// in Punycode form. That's only used for resolving relative URLs (e.g.
+// the OG image route), which is fine — the user-visible og:url and
+// canonical are emitted as raw strings below.
+const SITE_URL_PUNYCODE = "https://xn--rrleggerstfold-qqbh.no";
 
 interface PageMeta {
   title: string;
@@ -15,19 +23,19 @@ export function buildMetadata({
   path = "",
   noIndex = false,
 }: PageMeta): Metadata {
-  const url = `${siteUrl}${path}`;
+  const url = `${SITE_URL}${path}`;
   const fullTitle = `${title} | Østfold Rørleggerbedrift AS`;
 
   return {
     title: fullTitle,
     description,
-    metadataBase: new URL(siteUrl),
-    alternates: { canonical: url },
+    metadataBase: new URL(SITE_URL_PUNYCODE),
     robots: noIndex ? { index: false } : { index: true, follow: true },
     openGraph: {
       title: fullTitle,
       description,
-      url,
+      // url omitted intentionally — emitted via `other` below as raw
+      // string so the Unicode IDN form is preserved.
       siteName: "Østfold Rørleggerbedrift AS",
       locale: "nb_NO",
       type: "website",
@@ -36,6 +44,12 @@ export function buildMetadata({
       card: "summary_large_image",
       title: fullTitle,
       description,
+    },
+    other: {
+      "og:url": url,
+    },
+    alternates: {
+      canonical: url,
     },
   };
 }
