@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Om oss – lokalt forankret rørleggerservice i Østfold",
   description:
-    "Rørlegger Østfold AS er et lokalt rørleggerfirma med lang erfaring i Østfold. Sertifiserte fagfolk, fast pris og dokumentert kvalitet. Lær mer om oss.",
+    "Østfold Rørleggerbedrift AS er et lokalt rørleggerfirma med lang erfaring i Østfold. Sertifiserte fagfolk, fast pris og dokumentert kvalitet. Lær mer om oss.",
   path: "/om-oss",
 });
 
@@ -66,7 +66,7 @@ export default function OmOssPage() {
               Lokalt forankret – faglig sterk
             </h1>
             <p className="mt-5 text-xl text-brand-100/80 leading-relaxed">
-              Rørlegger Østfold AS er et lokalt rørleggerfirma med over{" "}
+              Østfold Rørleggerbedrift AS er et lokalt rørleggerfirma med over{" "}
               {company.socialProof.yearsExperience} erfaring. Vi er stolt av å
               betjene folk i hele Østfold med god service og faglig stolthet.
             </p>
@@ -84,7 +84,7 @@ export default function OmOssPage() {
               </h2>
               <div className="mt-5 space-y-4 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
-                  Rørlegger Østfold AS ble grunnlagt med ett mål: å tilby folk i
+                  Østfold Rørleggerbedrift AS ble grunnlagt med ett mål: å tilby folk i
                   Østfold en rørlegger de kan stole på. Ikke bare en som kommer
                   og fikser problemet, men en som kommuniserer tydelig, priser
                   ærlig og leverer dokumentert kvalitet.

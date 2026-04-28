@@ -38,11 +38,11 @@ export default function Header() {
           <Link
             href="/"
             className="flex items-center shrink-0"
-            aria-label="Rørlegger Østfold AS – til startsiden"
+            aria-label="Østfold Rørleggerbedrift AS – til startsiden"
           >
             <Image
               src="/RorleggerOstfoldLogo-horisontal-black.svg"
-              alt="Rørlegger Østfold AS"
+              alt="Østfold Rørleggerbedrift AS"
               width={220}
               height={40}
               className="h-16 w-auto dark:hidden"
@@ -50,7 +50,7 @@ export default function Header() {
             />
             <Image
               src="/RorleggerOstfoldLogo-horisontal-white.svg"
-              alt="Rørlegger Østfold AS"
+              alt="Østfold Rørleggerbedrift AS"
               width={220}
               height={40}
               className="hidden h-16 w-auto dark:block"
