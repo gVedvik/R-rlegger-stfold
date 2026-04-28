@@ -115,7 +115,7 @@ export default function OmOssPage() {
                   key={stat.label}
                   className="rounded-2xl bg-white dark:bg-slate-800 p-6 text-center transition-colors"
                 >
-                  <p className="text-4xl font-extrabold text-brand-700">
+                  <p className="text-4xl font-extrabold text-brand-700 dark:text-brand-300">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{stat.label}</p>

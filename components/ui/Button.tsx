@@ -22,11 +22,11 @@ const variantClasses: Record<Variant, string> = {
   primary:
     "bg-brand-600 text-white hover:bg-brand-700 focus-visible:ring-brand-400",
   secondary:
-    "bg-white text-brand-700 border border-brand-200 hover:bg-brand-50 hover:border-brand-300 focus-visible:ring-brand-400",
+    "bg-white dark:bg-slate-900 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800 hover:bg-brand-50 dark:hover:bg-slate-800 hover:border-brand-300 dark:hover:border-brand-700 focus-visible:ring-brand-400",
   emergency:
     "bg-brand-600 text-white hover:bg-brand-700 focus-visible:ring-brand-400",
   ghost:
-    "text-brand-700 hover:bg-brand-50 focus-visible:ring-brand-400",
+    "text-brand-700 dark:text-brand-300 hover:bg-brand-50 dark:hover:bg-slate-800 focus-visible:ring-brand-400",
 };
 
 const sizeClasses: Record<Size, string> = {

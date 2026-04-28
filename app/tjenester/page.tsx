@@ -122,7 +122,7 @@ export default function TjenesterPage() {
                       <li key={f} className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
                         <svg
                           aria-hidden="true"
-                          className="mt-0.5 h-4 w-4 shrink-0 text-brand-600"
+                          className="mt-0.5 h-4 w-4 shrink-0 text-brand-600 dark:text-brand-400"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
@@ -152,7 +152,7 @@ export default function TjenesterPage() {
                   }`}
                   aria-hidden="true"
                 >
-                  <div className="text-brand-600">
+                  <div className="text-brand-600 dark:text-brand-400">
                     {featureIcons[service.id] ?? featureIcons["serviceavtale"]}
                   </div>
                 </div>

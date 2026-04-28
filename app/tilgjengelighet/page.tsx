@@ -39,7 +39,7 @@ export default function TilgjengelighetPage() {
         <nav aria-label="Brødsmulesti" className="mb-8">
           <ol className="flex gap-2 text-sm text-slate-500 dark:text-slate-400">
             <li>
-              <Link href="/" className="hover:text-brand-700 transition-colors">
+              <Link href="/" className="hover:text-brand-700 dark:hover:text-brand-300 transition-colors">
                 Hjem
               </Link>
             </li>
@@ -57,7 +57,7 @@ export default function TilgjengelighetPage() {
           I samsvar med{" "}
           <a
             href="https://www.uutilsynet.no/regelverk/regelverk/267"
-            className="text-brand-700 hover:underline"
+            className="text-brand-700 dark:text-brand-300 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -158,7 +158,7 @@ export default function TilgjengelighetPage() {
                 E-post:{" "}
                 <a
                   href={`mailto:${company.email}`}
-                  className="text-brand-700 hover:underline"
+                  className="text-brand-700 dark:text-brand-300 hover:underline"
                 >
                   {company.email}
                 </a>
@@ -167,7 +167,7 @@ export default function TilgjengelighetPage() {
                 Telefon:{" "}
                 <a
                   href={`tel:${company.phone}`}
-                  className="text-brand-700 hover:underline"
+                  className="text-brand-700 dark:text-brand-300 hover:underline"
                 >
                   {company.phoneDisplay}
                 </a>
@@ -177,7 +177,7 @@ export default function TilgjengelighetPage() {
               Dersom du ikke er fornøyd med vår respons, kan du klage til{" "}
               <a
                 href="https://www.uutilsynet.no"
-                className="text-brand-700 hover:underline"
+                className="text-brand-700 dark:text-brand-300 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
