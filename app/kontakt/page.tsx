@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ContactForm from "@/components/sections/ContactForm";
 import company from "@/data/company.json";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildMetadata({
   title: "Kontakt – Østfold Rørleggerbedrift AS",
   description:
-    "Ta kontakt med Østfold Rørleggerbedrift AS. Ring 476 00 444, send e-post eller fyll ut kontaktskjemaet. Vi er tilgjengelige hverdager 07–17 og på akuttlinje 24/7.",
+    "Ta kontakt med Østfold Rørleggerbedrift AS. Ring 476 00 444 eller send e-post. Vi er tilgjengelige hverdager 07–17 og på akuttlinje 24/7.",
   path: "/kontakt",
 });
 
@@ -40,8 +39,7 @@ export default function KontaktPage() {
             Kontakt oss
           </h1>
           <p className="mt-4 max-w-xl text-lg text-brand-100/80">
-            Ring oss, send e-post eller fyll ut skjemaet – vi svarer raskt og
-            ærlig.
+            Ring oss eller send e-post – vi svarer raskt og ærlig.
           </p>
 
           {/* Quick contact cards */}
@@ -96,8 +94,6 @@ export default function KontaktPage() {
         </div>
       </section>
 
-      {/* Contact form */}
-      <ContactForm />
     </>
   );
 }
