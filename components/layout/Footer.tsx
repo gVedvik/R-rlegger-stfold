@@ -159,7 +159,18 @@ export default function Footer() {
             © {new Date().getFullYear()} Østfold Rørleggerbedrift AS. Org.nr.{" "}
             {company.orgnr}.
           </p>
-          <nav aria-label="Juridiske lenker" className="flex gap-4">
+          <nav aria-label="Juridiske lenker" className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <span>
+              Siden er designet og utviklet av{" "}
+              <a
+                href="https://muvy.no"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-brand-700 dark:text-brand-300 hover:underline"
+              >
+                Muvy AS
+              </a>
+            </span>
             <Link
               href="/personvern"
               className="hover:text-slate-800 dark:hover:text-slate-300 transition-colors"
