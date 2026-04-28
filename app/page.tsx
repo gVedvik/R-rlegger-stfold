@@ -4,7 +4,6 @@ import Services from "@/components/sections/Services";
 import HowWeWork from "@/components/sections/HowWeWork";
 import ServiceAreas from "@/components/sections/ServiceAreas";
 import FAQ from "@/components/sections/FAQ";
-import ContactForm from "@/components/sections/ContactForm";
 
 export default function HomePage() {
   return (
@@ -15,7 +14,6 @@ export default function HomePage() {
       <HowWeWork />
       <ServiceAreas />
       <FAQ />
-      <ContactForm />
     </>
   );
 }
