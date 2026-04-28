@@ -26,10 +26,10 @@ export default function Footer() {
       {/* Background pattern – inverted in dark mode (white→black) */}
       <div className="relative">
       <div className="container-xl flex justify-center pt-8">
-        <Link href="/" aria-label="Rørlegger Østfold AS – til startsiden">
+        <Link href="/" aria-label="Østfold Rørleggerbedrift AS – til startsiden">
           <Image
             src="/RorleggerOstfoldQualityMark-LightTheme.svg"
-            alt="Rørlegger Østfold AS kvalitetsmerke"
+            alt="Østfold Rørleggerbedrift AS kvalitetsmerke"
             width={260}
             height={260}
             className="h-[260px] w-[260px] dark:hidden"
@@ -37,7 +37,7 @@ export default function Footer() {
           />
           <Image
             src="/RorleggerOstfoldQualityMark-DarkTheme.svg"
-            alt="Rørlegger Østfold AS kvalitetsmerke"
+            alt="Østfold Rørleggerbedrift AS kvalitetsmerke"
             width={260}
             height={260}
             className="hidden h-[260px] w-[260px] dark:block"
@@ -53,7 +53,7 @@ export default function Footer() {
             <Link
               href="/"
               className="inline-flex items-center gap-2 mb-4"
-              aria-label="Rørlegger Østfold AS – til startsiden"
+              aria-label="Østfold Rørleggerbedrift AS – til startsiden"
             >
               <span className="text-xl font-bold text-white">
                 Rørlegger Østfold<span className="text-brand-400"> AS</span>
@@ -156,7 +156,7 @@ export default function Footer() {
       <div className="border-t border-slate-200 dark:border-slate-800">
         <div className="container-xl py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-500">
           <p>
-            © {new Date().getFullYear()} Rørlegger Østfold AS. Org.nr.{" "}
+            © {new Date().getFullYear()} Østfold Rørleggerbedrift AS. Org.nr.{" "}
             {company.orgnr}.
           </p>
           <nav aria-label="Juridiske lenker" className="flex gap-4">

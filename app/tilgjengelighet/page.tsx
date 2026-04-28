@@ -4,9 +4,9 @@ import { buildMetadata } from "@/lib/metadata";
 import company from "@/data/company.json";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Tilgjengelighetserklæring – Rørlegger Østfold AS",
+  title: "Tilgjengelighetserklæring – Østfold Rørleggerbedrift AS",
   description:
-    "Rørlegger Østfold AS sitt nettsted er designet for å overholde WCAG 2.1 AA. Les vår tilgjengelighetserklæring.",
+    "Østfold Rørleggerbedrift AS sitt nettsted er designet for å overholde WCAG 2.1 AA. Les vår tilgjengelighetserklæring.",
   path: "/tilgjengelighet",
   noIndex: true,
 });
@@ -72,7 +72,7 @@ export default function TilgjengelighetPage() {
               Mål og standard
             </h2>
             <p className="leading-relaxed">
-              Rørlegger Østfold AS har som mål at nettstedet skal oppfylle WCAG 2.1
+              Østfold Rørleggerbedrift AS har som mål at nettstedet skal oppfylle WCAG 2.1
               på nivå AA. Nettstedet er designet med universell utforming som
               grunnleggende prinsipp – ikke som en ettertanke.
             </p>
